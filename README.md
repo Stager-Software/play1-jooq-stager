@@ -1,24 +1,24 @@
-# play-jooq plugin
+# play1-jooq-stager plugin
 
-This plugin adds [JOOQ](http://http://www.jooq.org/) support to Play! Framework 1 applications.
+This plugin adds [jOOQ](http://www.jooq.org/) support to Play1 applications. It is a forked from Sismics' [play-jooq](https://github.com/sismics/play-jooq), customized to the requirements of Stager.
 
-# How to use
+## Installing
 
-####  Add the dependency to your `dependencies.yml` file
+Add the dependency to your `dependencies.yml` file:
 
 ```
 require:
-    - jooq -> jooq 0.1
+    - play1-jooq-stager -> play1-jooq-stager 1.0
 
 repositories:
     - sismics:
-        type:       http
-        artifact:   "http://release.sismics.com/repo/play/[module]-[revision].zip"
+        type:       https
+        artifact:   "https://example.org/path/to/repo/[module]-[revision].zip"
         contains:
-            - jooq -> *
+            - play1-jooq-stager -> *
 
 ```
-####  Run the `play deps` command
+Then run `play dependencies --sync`
 
 # License
 
